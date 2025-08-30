@@ -14,6 +14,7 @@ public:
     }
 };
 
+// Optimal solution(slow and fast pointer)
 class Solution {
 public:
     int findDuplicate(vector<int>& nums){
