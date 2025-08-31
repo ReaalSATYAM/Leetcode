@@ -19,7 +19,7 @@ public:
         return {dup, mis};
     }
 };
-
+// Optimal Solution
 class Solution {
 public:
     vector<int> findMissingAndRepeatedValues(vector<vector<int>>& grid) {
