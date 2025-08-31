@@ -20,6 +20,9 @@ public:
     }
 };
 // Optimal Solution
+// Time complexity = O(n^2)
+// Space complexity = O(1)
+
 class Solution {
 public:
     vector<int> findMissingAndRepeatedValues(vector<vector<int>>& grid) {
