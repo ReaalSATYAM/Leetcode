@@ -13,7 +13,8 @@ public:
         }
 
         while(extraStudents--){
-            auto top = pq.top(); pq.pop();
+            auto top = pq.top();
+            pq.pop();
             int idx = top.second;
 
             classes[idx][0]++;
@@ -25,6 +26,7 @@ public:
             pq.push({gain, idx});
         }
 
+        // Calculate the final average ratio
         double ans = 0.0;
         for(auto &c : classes){
             ans += (double)c[0] / c[1];
