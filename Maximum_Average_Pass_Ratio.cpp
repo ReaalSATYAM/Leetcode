@@ -2,6 +2,7 @@ class Solution {
 public:
     double maxAverageRatio(vector<vector<int>>& classes, int extraStudents) {
         int n = classes.size();
+        // Create a priority queue to store the potential increase in ratio and class counts
         priority_queue<pair<double,int>> pq;
         
         for(int i = 0; i < n; i++){
