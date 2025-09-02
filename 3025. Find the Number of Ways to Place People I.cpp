@@ -1,8 +1,10 @@
+// Optimal approach
 class Solution {
 public:
     int numberOfPairs(vector<vector<int>>& points) {
         int n = points.size();
         auto cmp = [&](vector<int> &c, vector<int> &t){
+            // First, sort the points based on the x-coordinate, and then y-coordinate in descending order if x-coordinates are equal.
             if(c[0] == t[0]) return c[1] > t[1];
             return c[0] < t[0];
         };
