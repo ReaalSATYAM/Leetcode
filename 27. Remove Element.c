@@ -16,6 +16,7 @@ int removeElement(int* nums, int n, int val) {
         {
             if(nums[j] != val)
             {
+                // swap val with a other element
                 swap(&nums[i], &nums[j]);
                 c++;
                 j--;
