@@ -22,3 +22,20 @@ public:
         return -1;
     }
 };
+
+class Solution {
+public:
+    int minOperations(vector<int>& nums, vector<int>& numsDivide) {
+        int g = numsDivide[0];
+        for(int i = 1; i < numsDivide.size(); i++){
+            g = __gcd(g, numsDivide[i]);
+        }
+        sort(nums.begin(), nums.end());
+        int c = 0;
+        for(auto it: nums){
+            if(g % it == 0) return c;
+            c++;
+        }
+        return -1;
+    }
+};
