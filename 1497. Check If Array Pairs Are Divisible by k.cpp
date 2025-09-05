@@ -12,3 +12,21 @@ public:
         return (c >= arr.size()/2 ) ? true: false;
     }
 };
+
+class Solution {
+public:
+    bool canArrange(vector<int>& arr, int k) {
+        vector<int> map(k, 0);
+
+        for(auto a: arr){
+            int rem = a%k;
+            if(rem < 0) rem += k;
+            map[rem]++;
+        }
+        if(map[0] % 2 != 0) return false; 
+        for(int i = 1; i <= k/2; i++){
+            if(map[i] != map[k-i]) return false;
+        }
+        return true;
+    }
+};
