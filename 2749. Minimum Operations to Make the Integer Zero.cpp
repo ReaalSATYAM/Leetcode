@@ -1,6 +1,7 @@
 class Solution {
 public:
     int makeTheIntegerZero(int num1, int num2) {
+        // why is k long long? it is to avoide integer overflow (k * num2)
         for(long long k = 1; k <= 60; k++){
             long long x = (long long)num1 - k * num2;
             if(x < 0) break;
