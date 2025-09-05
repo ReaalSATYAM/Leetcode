@@ -13,11 +13,12 @@ public:
     }
 };
 
+// optimal solution
 class Solution {
 public:
     bool canArrange(vector<int>& arr, int k) {
-        vector<int> map(k, 0);
-
+        vector<int> map(k, 0); 
+        
         for(auto a: arr){
             int rem = a%k;
             if(rem < 0) rem += k;
