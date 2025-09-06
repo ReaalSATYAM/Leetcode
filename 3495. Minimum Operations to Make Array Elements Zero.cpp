@@ -1,5 +1,6 @@
 class Solution {
 private:
+    // helper function to find the steps per range
     long long solve(int l, int r){
         long long L = 1;
         long long S = 1;
