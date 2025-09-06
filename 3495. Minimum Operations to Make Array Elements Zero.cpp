@@ -1,3 +1,5 @@
+// Brute force approach: using a max heap to divie the two biggest element by 4. This process will continue until all the elements of the heap become zero!
+// Optimal approach
 class Solution {
 private:
     // helper function to find the steps per range
