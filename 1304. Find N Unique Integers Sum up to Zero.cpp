@@ -12,6 +12,7 @@ public:
     }
 };
 
+// Standard method
 class Solution {
 public:
     vector<int> sumZero(int n) {
