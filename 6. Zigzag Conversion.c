@@ -1,3 +1,8 @@
+/*
+Example 1:
+Input: s = "PAYPALISHIRING", numRows = 3
+Output: "PAHNAPLSIIGYIR"
+*/
 char* convert(char* s, int numRows) {
     if (numRows == 1) return s;
     int n = strlen(s);
