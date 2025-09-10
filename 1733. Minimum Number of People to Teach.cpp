@@ -12,6 +12,7 @@ private:
     }
 public:
     int minimumTeachings(int n, vector<vector<int>>& languages, vector<vector<int>>& friendships) {
+        // Set to store users who cannot communicate with at least one friend
         unordered_set<int> usersNeedingHelp;
       
         for (auto& friendship : friendships) {
