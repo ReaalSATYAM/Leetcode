@@ -1,5 +1,6 @@
 class Solution {
 private:
+// Helper function to check if two users share at least one common language
     bool haveCommonLanguage(int user1, int user2, vector<vector<int>>& languages){
         for (int language1 : languages[user1 - 1]) {  
             for (int language2 : languages[user2 - 1]) {  
