@@ -1,3 +1,4 @@
+// Method 1
 class Solution {
 private:
     bool isChar(char c){
