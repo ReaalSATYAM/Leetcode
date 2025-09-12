@@ -1,4 +1,5 @@
 // Alice will win if there are odd no. of vowels
+// Bob will win if there are even no. of vowels
 class Solution {
 private: 
     bool isVowel(char c){
