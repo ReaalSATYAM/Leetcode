@@ -1,3 +1,4 @@
+// Alice will win if there are odd no. of vowels
 class Solution {
 private: 
     bool isVowel(char c){
