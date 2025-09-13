@@ -1,3 +1,4 @@
+// Using array
 class Solution {
 public:
     int maxFreqSum(string s) {
@@ -19,3 +20,4 @@ public:
 
     }
 };
+// Using hashmap
