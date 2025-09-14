@@ -1,0 +1,59 @@
+class Solution {
+    unordered_set<string> exactSet;
+    unordered_map<string, string> caseMap;
+    unordered_map<string, string> vowelMap;
+
+private:
+    string toLower(string str){
+        for(char &ch: str){
+            ch = tolower(ch);
+        }
+        return str;
+    }
+
+    string replaceVowel(string str){
+        for(char &ch: str){
+            if(ch == 'a'|| ch == 'e'||ch == 'i'|| ch == 'o'||ch == 'u'){
+                ch = '$';
+            }
+        }
+        return str;
+    }
+
+    string checkForMatch(string &query){
+        if(exactSet.count(query)) return query;
+
+        string lowerCase = toLower(query);
+        if(caseMap.count(lowerCase)) return caseMap[lowerCase];
+
+        string vowelCase = replaceVowel(lowerCase);
+        if(vowelMap.count(vowelCase)) return vowelMap[vowelCase];
+
+        return "";
+    }
+
+public:
+    vector<string> spellchecker(vector<string>& wordlist, vector<string>& queries) {
+        vector<string> res;
+
+        for(const string& word : wordlist){
+            exactSet.insert(word);
+
+            string lowerCase = toLower(word);
+            if(caseMap.find(lowerCase) == caseMap.end()){
+                caseMap[lowerCase] = word;
+            }
+
+            string vowelCase = replaceVowel(lowerCase);
+            if(vowelMap.find(vowelCase) == vowelMap.end()){
+                vowelMap[vowelCase] = word;
+            }
+        }
+
+        for(string& query : queries){
+            res.push_back(checkForMatch(query));
+        }
+
+        return res;
+    }
+};
