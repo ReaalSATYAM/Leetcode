@@ -23,7 +23,7 @@ private:
         }
         return str;
     }
-
+    
     string checkForMatch(string &query){
         if(exactSet.count(query)) return query;
 
@@ -40,6 +40,7 @@ public:
     vector<string> spellchecker(vector<string>& wordlist, vector<string>& queries) {
         vector<string> res;
 
+        // convert wordlist for easier string matching with queries
         for(const string& word : wordlist){
             exactSet.insert(word);
 
