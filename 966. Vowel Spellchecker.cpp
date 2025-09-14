@@ -1,4 +1,5 @@
 class Solution {
+    // maps are used for constant time(O(1)) look up 
     unordered_set<string> exactSet;
     unordered_map<string, string> caseMap;
     unordered_map<string, string> vowelMap;
