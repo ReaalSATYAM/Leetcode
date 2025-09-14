@@ -5,14 +5,16 @@ class Solution {
     unordered_map<string, string> vowelMap;
 
 private:
-    // convert string to lower case
+    // Case 1
+    // convert string to lower case.
     string toLower(string str){
         for(char &ch: str){
             ch = tolower(ch);
         }
         return str;
     }
-
+    // Case 2
+    // IMP: replace vowels with '$' for easier matching(in case of vowle error only).  
     string replaceVowel(string str){
         for(char &ch: str){
             if(ch == 'a'|| ch == 'e'||ch == 'i'|| ch == 'o'||ch == 'u'){
