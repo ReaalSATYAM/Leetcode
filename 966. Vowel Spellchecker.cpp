@@ -23,7 +23,8 @@ private:
         }
         return str;
     }
-    
+
+// function to check if query is in wordlisty or not ?
     string checkForMatch(string &query){
         if(exactSet.count(query)) return query;
 
