@@ -5,6 +5,7 @@ class Solution {
     unordered_map<string, string> vowelMap;
 
 private:
+    // convert string to lower case
     string toLower(string str){
         for(char &ch: str){
             ch = tolower(ch);
