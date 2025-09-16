@@ -4,7 +4,7 @@
 class Solution {
 public:
     vector<int> replaceNonCoprimes(vector<int>& nums) {
-        vector<int> res;
+        vector<int> res;// we can use a stack too but than we need to convert to a vector before returning. So it is better to use a vector as a stack.
         for(int i = 0; i < nums.size(); i++){
             while(!res.empty()){
                 int prev = res.back();
