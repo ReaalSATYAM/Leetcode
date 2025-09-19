@@ -11,7 +11,7 @@ public:
     }
     
     void resetCell(string cell) {
-        sheet[cell] = 0;
+        sheet[cell] = 0;// reset the cell. if you want to use erase function here, then you need change solve function accordingly 
     }
     int solve(string a){
         if(isdigit(a[0])){
