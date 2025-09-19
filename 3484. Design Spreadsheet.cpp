@@ -7,7 +7,7 @@ public:
     }
     
     void setCell(string cell, int value) {
-        sheet[cell] = value;
+        sheet[cell] = value; // simply  set the store cell -> value
     }
     
     void resetCell(string cell) {
