@@ -21,7 +21,7 @@ public:
         return sheet[a];
     }
     int getValue(string formula) {
-        string s = formula.substr(1);
+        string s = formula.substr(1);// remove '=' sign
         int plusIndex = s.find('+');
         string left = s.substr(0, plusIndex);
         string right = s.substr(plusIndex+1);
