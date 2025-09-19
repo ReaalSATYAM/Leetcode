@@ -14,6 +14,7 @@ public:
         sheet[cell] = 0;// reset the cell. if you want to use erase function here, then you need change solve function accordingly 
     }
     int solve(string a){
+        // check if 'a' is a number or not ?
         if(isdigit(a[0])){
             return stoi(a);
         }
