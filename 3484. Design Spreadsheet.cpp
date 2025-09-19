@@ -23,8 +23,8 @@ public:
     int getValue(string formula) {
         string s = formula.substr(1);// remove '=' sign
         int plusIndex = s.find('+');
-        string left = s.substr(0, plusIndex);
-        string right = s.substr(plusIndex+1);
+        string left = s.substr(0, plusIndex);// before '+'
+        string right = s.substr(plusIndex+1);// after '+'
 
         return solve(left) + solve(right);
     }
