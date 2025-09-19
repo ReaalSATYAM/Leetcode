@@ -1,5 +1,6 @@
 class Spreadsheet {
 public:
+    // Used instead of a 2d matrix
     unordered_map<string, int> sheet;
     Spreadsheet(int rows) {
         
