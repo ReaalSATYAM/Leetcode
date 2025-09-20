@@ -10,6 +10,7 @@ public:
     }
 
     bool addPacket(int source, int destination, int timestamp) {
+        // converting source, destination, timestamp to string for better access
         string packet = to_string(source) + "_" + to_string(destination) + "_" + to_string(timestamp);
         
         if(packetMap.find(packet) != packetMap.end()) {
@@ -37,7 +38,7 @@ public:
         packetMap.erase(key);
 
         int d = packet[1];
-        timeDesMap[d].erase(timeDesMap[d].begin());  // Remove the oldest timestamp for the destination
+        timeDesMap[d].erase(timeDesMap[d].begin());  
         return packet;
     }
 
