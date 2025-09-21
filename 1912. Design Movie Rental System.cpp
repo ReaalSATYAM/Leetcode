@@ -1,5 +1,7 @@
+
 class MovieRentingSystem {
 private:
+    // store unrented movies
     unordered_map<int, set<pair<int, int>>> unrented;
     map<pair<int, int>, int> shopAndMovieToPrice;
     set<tuple<int, int, int>> rented;
