@@ -11,6 +11,7 @@ public:
             }
         }
         int count = 0;
+        // iterating over the freqTable to find elements with maximum frequency 
         for(auto it: freqTable){
             if(it.second == MAX) {
                 count += it.second;
