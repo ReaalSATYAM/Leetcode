@@ -33,12 +33,11 @@ public:
                 break;
             }
 
-            mp[remain] = result.length();
+            mp[remain] = result.length();// storing index so that later we can add '(' on that index
 
             remain *= 10;
             int digit = remain / absDenominator;
             result += to_string(digit);
-
             remain = remain % absDenominator;
         }
 
