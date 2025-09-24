@@ -26,6 +26,7 @@ public:
 
         unordered_map<int, int> mp;
         while(remain != 0) {
+            // checking if the decimal part is repeating or not
             if(mp.count(remain)) {
                 result.insert(mp[remain], "(");
                 result += ")";
