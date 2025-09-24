@@ -7,6 +7,7 @@ public:
 
         string result;
 
+        // for handeling negative numbers
         if((long long)numerator * (long long)denominator < 0) {
             result += "-";
         }
