@@ -1,3 +1,4 @@
+// time complexity O(n)
 class Solution {
 public:
     string fractionToDecimal(int numerator, int denominator) {
