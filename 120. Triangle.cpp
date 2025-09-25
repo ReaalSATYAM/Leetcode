@@ -1,4 +1,5 @@
 // Tabulation
+// Space Complexity: O(N X N)
 class Solution {
 public:
     int minimumTotal(vector<vector<int>>& triangle) {
