@@ -1,5 +1,6 @@
 class Solution {
 private:
+    // Shoelace Formula
     double triangleArea(vector<int>& A, vector<int>& B, vector<int>& C) {
         return 0.5 * abs( A[0] * (B[1] - C[1]) + B[0] * (C[1] - A[1]) + C[0] * (A[1] - B[1]));
     }
