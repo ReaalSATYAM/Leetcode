@@ -3,6 +3,7 @@
 class Solution {
 public:
     int largestPerimeter(vector<int>& nums){
+        // sorting is done to get the 3 largest side of the possible traingle 
         sort(nums.begin(), nums.end());
         for (int i = nums.size() - 1; i >= 2; --i){
             if (nums[i - 1] + nums[i - 2]> nums[i]){
