@@ -2,7 +2,7 @@ class Solution {
  public:
   int maxBottlesDrunk(int numBottles, int numExchange) {
     int ans = numBottles;
-
+    // loop only if we can still exchange more bottels
     while (numBottles >= numExchange) {
       numBottles = (numBottles - numExchange + 1);
       ++numExchange;
