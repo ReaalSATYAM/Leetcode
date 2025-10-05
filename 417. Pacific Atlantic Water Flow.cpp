@@ -5,7 +5,7 @@ private:
       return;
     if (seen[i][j] || heights[i][j] < h)
       return;
-
+    // Traversing in all 4 directions(up, down, left, right)
     seen[i][j] = true;
     dfs(heights, i + 1, j, seen, heights[i][j]);
     dfs(heights, i - 1, j, seen, heights[i][j]);
