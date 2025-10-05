@@ -1,6 +1,7 @@
 class Solution {
 private:
   void dfs(const vector<vector<int>>& heights, int i, int j, vector<vector<bool>>& seen, int h = 0) {
+    // checking boundary condition
     if (i < 0 || i == heights.size() || j < 0 || j == heights[0].size())
       return;
     if (seen[i][j] || heights[i][j] < h)
