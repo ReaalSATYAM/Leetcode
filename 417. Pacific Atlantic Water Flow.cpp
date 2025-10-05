@@ -4,6 +4,7 @@ private:
     // checking boundary condition
     if (i < 0 || i == heights.size() || j < 0 || j == heights[0].size())
       return;
+    // return if visited or height < h(previous height)
     if (seen[i][j] || heights[i][j] < h)
       return;
     // Traversing in all 4 directions(up, down, left, right)
