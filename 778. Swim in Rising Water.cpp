@@ -50,3 +50,5 @@ public:
     }
   
 };
+
+// Solution 2
