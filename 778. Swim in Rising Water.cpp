@@ -1,4 +1,5 @@
 // Solution 1
+// Using union find we check if there exist a path between (0,0) to (n-1, n-1)
 class Solution {
 private:
 // Find with path compression
