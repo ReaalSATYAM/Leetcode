@@ -1,6 +1,7 @@
 // Solution 1
 class Solution {
 private:
+// Find with path compression
     int find(int x) {
         if (parent[x] != x) {
             parent[x] = find(parent[x]);  
