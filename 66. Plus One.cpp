@@ -9,6 +9,7 @@ public:
         for(int i = digits.size()-1; i >= 0; i--){
             digits[i]++; // Add 1 
             digits[i] %= 10;// if the result is 10 -> 0
+            // Return if there is no carry
             if(digits[i] != 0){
                 return digits;
             } 
