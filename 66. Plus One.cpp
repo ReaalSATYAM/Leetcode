@@ -5,7 +5,7 @@ Increment the large integer by one and return the resulting array of digits.
 class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
-        // Strat from the right side(LSB) 
+        // Start from the right side(LSB) 
         for(int i = digits.size()-1; i >= 0; i--){
             digits[i]++; // Add 1 
             digits[i] %= 10;// if the result is 10 -> 0
@@ -14,6 +14,7 @@ public:
                 return digits;
             } 
         }
+        // Insert the carry at the start in case of 9 or 99...
         digits.insert(digits.begin(), 1);
         return digits;
     }
