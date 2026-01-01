@@ -8,7 +8,7 @@ public:
         // Strat from the right side(LSB) 
         for(int i = digits.size()-1; i >= 0; i--){
             digits[i]++; // Add 1 
-            digits[i] %= 10;
+            digits[i] %= 10;// if the result is 10 -> 0
             if(digits[i] != 0){
                 return digits;
             } 
