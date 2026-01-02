@@ -27,7 +27,7 @@ public:
     }
 };
 
-// Optimal approach
+// Optimal approach(check if the element appeared before or not)
 class Solution {
 public:
     int repeatedNTimes(vector<int>& nums){
