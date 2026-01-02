@@ -1,3 +1,4 @@
+// Brute force approach
 class Solution {
 public:
     int repeatedNTimes(vector<int>& nums){
