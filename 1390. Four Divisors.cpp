@@ -59,6 +59,7 @@ public:
                 if(nums[i] % j == 0){
                     temp += j;
                     c++;
+                    // Count only onces in case of perfect square
                     if(j * j != nums[i]){
                         c++;
                         temp += nums[i]/j;
