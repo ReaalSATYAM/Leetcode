@@ -27,11 +27,13 @@ public:
         int total = 0;
         for(int i = 0 ; i < nums.size(); i++){
             int c = 2, temp = 1, f = 0;
+            // iterating till n/2
             for(int j = 2; j <= nums[i]/2; j++){
                 if(nums[i] % j == 0){
                     temp += j;
                     c++;
                 }
+                // Break if c > 4
                 if(c > 4){
                     f = 1;
                     break;
