@@ -54,7 +54,7 @@ public:
         int total = 0;
         for(int i = 0 ; i < nums.size(); i++){
             int c = 2, temp = 1 + nums[i];
-
+            // Running till sqrt(n)
             for(int j = 2; j <= sqrt(nums[i]); j++){
                 if(nums[i] % j == 0){
                     temp += j;
