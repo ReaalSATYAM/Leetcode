@@ -46,3 +46,29 @@ public:
         return total;
     }
 };
+
+// Best approach
+class Solution {
+public:
+    int sumFourDivisors(vector<int>& nums) {
+        int total = 0;
+        for(int i = 0 ; i < nums.size(); i++){
+            int c = 2, temp = 1 + nums[i];
+
+            for(int j = 2; j <= sqrt(nums[i]); j++){
+                if(nums[i] % j == 0){
+                    temp += j;
+                    c++;
+                    if(j * j != nums[i]){
+                        c++;
+                        temp += nums[i]/j;
+                    }
+                }
+            }  
+            if(c == 4){
+                total += temp;
+            }
+        }
+        return total;
+    }
+};
