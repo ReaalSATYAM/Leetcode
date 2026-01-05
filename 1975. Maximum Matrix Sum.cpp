@@ -27,7 +27,7 @@ public:
             return ans;
         }
         else{
-            return ans - 2*minE;
+            return ans - 2*minE;// one time to remove it from the absolute sum, second time is to subtract it. 
         }
         
     }
