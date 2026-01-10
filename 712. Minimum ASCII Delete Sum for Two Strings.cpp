@@ -1,3 +1,7 @@
+
+/*
+    Given two strings s1 and s2, return the lowest ASCII sum of deleted characters to make two strings equal.
+*/
 class Solution {
 public:
     int minimumDeleteSum(string s1, string s2) {
